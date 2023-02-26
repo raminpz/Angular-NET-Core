@@ -15,7 +15,9 @@
       <tr *ngFor="let estudiante of listEstudiantes; let i=index">
         <td>{{ i }}</td>
         <td>{{ estudiante.nombre}}</td>
-        <td [ngStyle]="{ 'font-style':estudiante.estado ==='Promocionado' ? 'italic' : 'normal'}">{{ estudiante.estado }}</td>
+        <td>
+          <span [ngClass]="estudiante.estado === 'Promocionado' ? 'badge bg-success' : 'badge bg-secondary'">{{ estudiante.estado }}</span>
+        </td>
       </tr>
     </tbody>
   </table>
