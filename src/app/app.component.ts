@@ -6,7 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  texto = '';
+  listEstudiantes: any[] = [
+    {nombre: 'Thomas Muller', estado: 'Promocionado'},
+    {nombre: 'Lionel Messio', estado: 'Regular'},
+    {nombre: 'Robert Lewandosky', estado: 'Regular'},
+    {nombre: 'Maria Gomez', estado: 'Promocionado'}
+  ];
+
+
+  mostrar = true;
+  toogle(): void{
+    this.mostrar = !this.mostrar;
+  }
+
 }
 
 
