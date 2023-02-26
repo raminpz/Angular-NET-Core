@@ -6,17 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre = 'Ramiro';
-  textoPlaceholder = 'Escriba algo aqui';
-  deshabilitado = true;
-  imgSrc = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/640px-Angular_full_color_logo.svg.png';
+  texto = 'Esto es un video sobre event bindings'
 
-  constructor(){
-    setInterval(() => this.deshabilitado = false, 3000);
-  }
-
-  getSuma(numero1: number, numero2: number){
-    return numero1 + numero2;
+  cambiarTexto(): void{
+    this.texto = 'En el proximo video vamos a ver Two way data-binding';
   }
 }
 
