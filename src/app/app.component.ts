@@ -10,7 +10,9 @@ export class AppComponent {
     {nombre: 'Thomas Muller', estado: 'Promocionado'},
     {nombre: 'Lionel Messio', estado: 'Regular'},
     {nombre: 'Robert Lewandosky', estado: 'Regular'},
-    {nombre: 'Maria Gomez', estado: 'Promocionado'}
+    {nombre: 'Maria Gomez', estado: 'Promocionado'},
+    {nombre: 'Nicolas Nuñez', estado: 'Libre'},
+    {nombre: 'Patricia Garcia', estado: 'Libre'}
   ];
 
 
